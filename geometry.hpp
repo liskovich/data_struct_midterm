@@ -9,6 +9,15 @@ private:
 
 public:
   Point(double x_p, double y_p) : x(x_p), y(y_p) {}
+
+  double getX()
+  {
+    return x;
+  }
+  double getY()
+  {
+    return y;
+  }
 };
 
 struct Line
@@ -21,6 +30,15 @@ public:
   Line(Point start_p, Point end_p) : start(start_p), end(end_p) {}
 
   double lineLength();
+
+  Point getStart()
+  {
+    return start;
+  }
+  Point getEnd()
+  {
+    return end;
+  }
 };
 
 struct Quadrilateral
@@ -36,7 +54,23 @@ public:
 
   bool isSquare();
   double getArea();
-};
 
+  Line getLine1()
+  {
+    return l1;
+  }
+  Line getLine2()
+  {
+    return l2;
+  }
+  Line getLine3()
+  {
+    return l3;
+  }
+  Line getLine4()
+  {
+    return l4;
+  }
+};
 
 #endif
