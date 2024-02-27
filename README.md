@@ -15,5 +15,7 @@ And run with:
 ## Output
 
 Max area from txt file is: 0
+<br>
 Max area from csv (normal) file is: 38025
+<br>
 Max area from csv (dirty) file is: 87616
