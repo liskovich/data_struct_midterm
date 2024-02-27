@@ -14,4 +14,6 @@ And run with:
 
 ## Output
 
-TODO:
+Max area from txt file is: 0
+Max area from csv (normal) file is: 38025
+Max area from csv (dirty) file is: 87616
