@@ -1,6 +1,10 @@
 #ifndef GEOMETRY_HPP
 #define GEOMETRY_HPP
 
+#include <cmath>
+
+using namespace std;
+
 struct Point
 {
 private:
@@ -17,6 +21,13 @@ public:
   double getY()
   {
     return y;
+  }
+
+  // to be able to compatre two points
+  bool operator==(const Point &other) const
+  {
+    // Check if both x and y coordinates are equal within a small tolerance
+    return abs(x - other.x) < 1e-6 && abs(y - other.y) < 1e-6;
   }
 };
 
