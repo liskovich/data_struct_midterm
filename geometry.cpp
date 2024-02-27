@@ -40,5 +40,6 @@ bool Quadrilateral::isSquare()
 
 double Quadrilateral::getArea()
 {
-  return 0.0;
+  // basic formula: A = (line_length) ^ 2
+  return pow(l1.lineLength(), 2);
 }
